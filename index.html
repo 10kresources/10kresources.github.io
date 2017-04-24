@@ -106,7 +106,7 @@
 	
 		  $(entry).each(function(){
 			// Column names are name, age, etc.
-			$('.results').prepend('<div class="col-md-12"><a href="'+this.gsx$url.$t+'"rel="external nofollow" target="_blank"><h3>'+this.gsx$productname.$t+'</h3></a><p>'+this.gsx$productdescription.$t+'</p><hr></div>');
+						$('.results').prepend('<div class="col-md-12"><a href="'+this.gsx$url.$t+'"rel="external nofollow" target="_blank"><h3>'+this.gsx$productname.$t+'</h3></a><p>'+this.gsx$productdescription.$t+'</p><div> <span class="label label-info">Category: '+this.gsx$category.$t+'</span>&nbsp;<span class="label label-success">Price: '+this.gsx$price.$t+'</span></div><hr></div>');
 		  });
 
 		 });
